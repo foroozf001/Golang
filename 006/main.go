@@ -9,7 +9,9 @@ func main() {
 	// NinjaLevel4_exercise4()
 	// NinjaLevel4_exercise5()
 	// NinjaLevel4_exercise6()
-	NinjaLevel4_exercise7()
+	// NinjaLevel4_exercise7()
+	// NinjaLevel4_exercise8()
+	NinjaLevel4_exercise9()
 }
 
 func NinjaLevel4_exercise0() {
@@ -106,10 +108,36 @@ func NinjaLevel4_exercise6() {
 
 func NinjaLevel4_exercise7() {
 	m := map[string][]string{
-		"ross_bob":  []string{"painting", "brush", "paint"},
-		"dylan_bob": []string{"music", "singing", "guitar"},
+		"ross_bob":  {"painting", "brush", "paint"},
+		"dylan_bob": {"music", "singing", "guitar"},
 	}
-	for _, item := range m {
-		fmt.Printf("%v\n", item)
+	for _, v := range m {
+		fmt.Printf("%v\n", v)
+	}
+}
+
+func NinjaLevel4_exercise8() {
+	m := map[string][]string{
+		"ross_bob":  {"painting", "brush", "paint"},
+		"dylan_bob": {"music", "singing", "guitar"},
+	}
+	m["marley_bob"] = []string{"reggae", "jamaica", "jammin"}
+
+	for k, v := range m {
+		fmt.Printf("%s\t%v\n", k, v)
+	}
+}
+
+func NinjaLevel4_exercise9() {
+	m := map[string][]string{
+		"ross_bob":  {"painting", "brush", "paint"},
+		"dylan_bob": {"music", "singing", "guitar"},
+	}
+	m["marley_bob"] = []string{"reggae", "jamaica", "jammin"}
+
+	delete(m, "ross_bob")
+
+	for k, v := range m {
+		fmt.Printf("%s\t%v\n", k, v)
 	}
 }
