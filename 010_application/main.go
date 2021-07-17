@@ -18,6 +18,7 @@ func main() {
 	// NinjaLevel8_exercise3()
 	// NinjaLevel8_exercise4()
 	// NinjaLevel8_exercise5()
+	test()
 }
 
 func test() {
@@ -32,7 +33,7 @@ func test() {
 		Age:   21,
 	}
 	people = append(people, bobby, jessy)
-
+	fmt.Printf("%T\t%v", people, people)
 }
 
 func NinjaLevel8_exercise1() {

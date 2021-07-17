@@ -1,0 +1,10 @@
+goland doesn't make use of GOPATH any longer.
+
+
+Run following command in fresh golang project:
+go mod init github.com/foroozf001/your_repo_name
+go mod tidy
+
+
+Run following command to format everything:
+go fmt github.com/...
