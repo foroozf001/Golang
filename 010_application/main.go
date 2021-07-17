@@ -17,7 +17,22 @@ func main() {
 	// NinjaLevel8_exercise2()
 	// NinjaLevel8_exercise3()
 	// NinjaLevel8_exercise4()
-	NinjaLevel8_exercise5()
+	// NinjaLevel8_exercise5()
+}
+
+func test() {
+	var people []user
+	bobby := user{
+		First: "Bobby",
+		Age:   32,
+	}
+
+	jessy := user{
+		First: "Jessy",
+		Age:   21,
+	}
+	people = append(people, bobby, jessy)
+
 }
 
 func NinjaLevel8_exercise1() {
