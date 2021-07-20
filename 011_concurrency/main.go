@@ -12,14 +12,19 @@ var wg sync.WaitGroup
 
 func main() {
 	wg.Add(2)
-	NoGor()
 	go Exercise1.Gor1(GorPrint, &wg)
 	go Exercise1.Gor2(GorPrint, &wg)
+	NoGor()
 	wg.Wait()
 }
 
 func NoGor() {
 	GorPrint(&wg)
+	i := 0
+	for i < 100 {
+		fmt.Println("NoGor:", i)
+		i++
+	}
 }
 
 func GorPrint(wg *sync.WaitGroup) {
