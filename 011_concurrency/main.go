@@ -6,11 +6,18 @@ import (
 	"sync"
 
 	"github.com/foroozf001/Golang/011_concurrency/Exercise1"
+	"github.com/foroozf001/Golang/011_concurrency/Exercise2"
 )
 
 var wg sync.WaitGroup
 
 func main() {
+	// Ex1()
+	Exercise2.Ex2()
+}
+
+// Exercise 1
+func Ex1() {
 	wg.Add(2)
 	go Exercise1.Gor1(GorPrint, &wg)
 	go Exercise1.Gor2(GorPrint, &wg)
