@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/foroozf001/Golang/010_application/ex1"
-	"github.com/foroozf001/Golang/010_application/ex2"
-	"github.com/foroozf001/Golang/010_application/ex3"
-	"github.com/foroozf001/Golang/010_application/ex4"
-	"github.com/foroozf001/Golang/010_application/ex5"
+	"github.com/foroozf001/golang-fundamentals/010_application/ex1"
+	"github.com/foroozf001/golang-fundamentals/010_application/ex2"
+	"github.com/foroozf001/golang-fundamentals/010_application/ex3"
+	"github.com/foroozf001/golang-fundamentals/010_application/ex4"
+	"github.com/foroozf001/golang-fundamentals/010_application/ex5"
 )
 
 func main() {

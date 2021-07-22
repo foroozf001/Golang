@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/foroozf001/Golang/011_concurrency/Exercise1"
-	"github.com/foroozf001/Golang/011_concurrency/Exercise5"
+	"github.com/foroozf001/golang-fundamentals/011_concurrency/Exercise1"
+	"github.com/foroozf001/golang-fundamentals/011_concurrency/Exercise5"
 )
 
 var wg sync.WaitGroup

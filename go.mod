@@ -1,4 +1,4 @@
-module github.com/foroozf001/Golang
+module github.com/foroozf001/golang-fundamentals
 
 go 1.16
 
